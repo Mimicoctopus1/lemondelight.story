@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lemon Delight.Story</title>
+    </head>
+    <style>
+        .sideMenu {
+            position: fixed;
+            color: rgba(255, 255, 255, 1);
+            top: 0%;
+            right: 0%;
+            height: 100%;
+            width: 20%;
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 1;
+            display: none;
+        }
+        
+        #MENU-BAR-CSS{}
+        .menu-bar {
+            color: rgba(0, 0, 0, 0);
+            background-color: rgba(255, 255, 0, 0.5);
+            font-size: 50px;
+            position: fixed;
+            top: -50px;
+            left: 0px;
+        }
+        
+        .homepage-link {
+            font-family: cursive;
+            position: fixed;
+            top: -4%;
+            left: 10px;
+        }
+        
+        .order-link {
+            font-family: "arial", monospace;
+            position: fixed;
+            top: -3%;
+            right: 50px;
+        }
+        
+        .questions-link {
+            font-family: "arial", monospace;
+            font-size: 30px;
+            position: fixed;
+            top: -5%;
+            right: 180px;
+        }
+        
+        .openSideMenu {
+            border: 1px solid  black;
+            padding: 4px;
+            background-color: aqua;
+            font: 5px cursive;
+            position: fixed;
+            top: 3%;
+            right: 10px;
+        }
+    </style>
+    <body>
+        <div>
+        <h2 id = "top" class = "menu-bar">
+            ______________________________________________________________________________________________________________________________________________________________
+        </h2>
+        <h2 class = "homepage-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
+        </h2>
+        <h2 class = "questions-link">
+            <a href = "#questions">?</a>
+        </h2><!--Quest?ons Link-->
+        <h2 class = "order-link">
+            <a href = "https://mimicoctopus1.github.io/lemondelight.order/">
+                ORDER
+            </a>
+            <div class = "openSideMenu">
+               <strong>______<br>______<br>______</strong>
+            </div>
+        </h2><!--Order Link-->
+        </div><!--Menu Bar-->
+        <div class = "sideMenu">
+            <input type = "button" value = "X" class = "closeSideMenu">
+            <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
+            <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
+        </div><!--sideMenu-->
+        
+        <script>
+            var sideOpener = document.getElementsByClassName("openSideMenu")[0];
+            var sideCloser = document.getElementsByClassName("closeSideMenu")[0];
+            var sideMenu = document.getElementsByClassName("sideMenu")[0];
+            var sideMenuOpen = false;
+            var showSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(sideMenuOpen) {
+                    sideMenu.style.display = "block";
+                }
+            };
+            var hideSideMenu = function() {
+                sideMenuOpen = !sideMenuOpen;
+                if(!sideMenuOpen) {
+                    sideMenu.style.display = "none";
+                }
+            }
+            sideOpener.addEventListener("click", showSideMenu);
+            sideCloser.addEventListener("click", hideSideMenu);
+        </script>
+    </body>
+</html>
