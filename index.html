@@ -5,19 +5,7 @@
         <title>Lemon Delight.Story</title>
     </head>
     <style>
-        .sideMenu {
-            position: fixed;
-            color: rgba(255, 255, 255, 1);
-            top: 0%;
-            right: 0%;
-            height: 100%;
-            width: 20%;
-            background-color: rgba(0, 0, 0, 1);
-            z-index: 1;
-            display: none;
-        }
-        
-        #MENU-BAR-CSS{}
+        /*MENU BAR CSS*/
         .menu-bar {
             color: rgba(0, 0, 0, 0);
             background-color: rgba(255, 255, 0, 0.5);
@@ -53,11 +41,30 @@
             border: 1px solid  black;
             padding: 4px;
             background-color: aqua;
-            font: 5px cursive;
+            font: 5px "cursive";
             position: fixed;
             top: 3%;
             right: 10px;
         }
+        
+        /*GENERAL CSS*/
+        .sideMenu {
+            position: fixed;
+            color: rgba(255, 255, 255, 1);
+            top: 0%;
+            right: 0%;
+            height: 100%;
+            width: 20%;
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 1;
+            display: none;
+        }
+        
+        .storyBody {
+            font-family: "centaur", fantasy, cursive, serif, sans-serif;
+            color: rgba(14, 163, 0);
+        }
+        
     </style>
     <body>
         <div>
@@ -68,7 +75,7 @@
             <a href = "https://mimicoctopus1.github.io/lemondelight">Lemon Delight</a>
         </h2>
         <h2 class = "questions-link">
-            <a href = "#questions">?</a>
+            <a href = "https://mimicoctopus1.github.io/lemondelight/#questions">?</a>
         </h2><!--Quest?ons Link-->
         <h2 class = "order-link">
             <a href = "https://mimicoctopus1.github.io/lemondelight.order/">
@@ -84,6 +91,16 @@
             <p>I was just thinking this text and actual box could be a different color. What seems like a good color?</p>
             <a href = "https://mimicoctopus1.github.io/lemondelight.story">Story</a>
         </div><!--sideMenu-->
+        <br><h1>The Lemon Delight Story</h1>
+        <p class = "storyBody">
+            <em>
+            Hello there!<br>
+            <span style = "position: relative; left: 40px;">Our lemonade stand is family owned and offers seasonal drinks.</span><br> Our recipe has a balance of freshly squeezed lemon juice, water, and<br>sugar to bring out the sweetness from the fruits.
+            <br><span style = "position: relative; left: 40px;">The right way to set up a lemonade stand is to make signs</span><br>on cardboard or any sturdy surface and put them up close to your<br>location to attract people to buy drinks. You might want to sell<br>your lemonade for a low price so people will want to buy it. Use <br> to make your own signs and create your own free account.<br><span style = "position: relative; left: 40px;">Have fun!</span>
+            </em>
+        </p>
+        
+        
         
         <script>
             var sideOpener = document.getElementsByClassName("openSideMenu")[0];
